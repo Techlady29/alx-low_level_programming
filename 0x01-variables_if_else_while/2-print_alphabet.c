@@ -20,6 +20,5 @@ for (ch = 65; ch <= 90; ch++)
 putchar(ch);
 }
 
-putchar(10); /* This is an ASCII new line code */
 return (0);
 }
