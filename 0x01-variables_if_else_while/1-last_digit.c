@@ -29,11 +29,11 @@ if (x == 0)
 printf("and is 0");
 }
 
-if (x < 6 && x !=0)
+if (x < 6 && x ! = 0)
 {
 printf("and is less than 6 and not 0");
 }
 
 printf("\n");
-return(0);
+return (0);
 }
