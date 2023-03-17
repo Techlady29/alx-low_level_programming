@@ -9,17 +9,16 @@
 int main(void)
 {
 
-int ch;
+int char c = 'a';
 
-for (ch = 97; ch <= 122; ch++)
+while (c <= 'z');
+
 {
-putchar(ch);
+putchar(c);
+c++;
 }
 
-for (ch = 65; ch <= 90; ch++)
-{
-putchar(ch);
-}
+putchar('\n');
 
 return (0);
 }
