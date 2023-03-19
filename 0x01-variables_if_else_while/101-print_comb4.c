@@ -9,7 +9,7 @@
 int main(void)
 {
 	int i, j, k, l;
-	
+
 	for (i = 0; i < 1000; i++)
 	{
 
@@ -18,7 +18,7 @@ int main(void)
 	l = 1 % 10;
 
 	if (j < k && k < l)
-	
+
 	{
 	putchar(j + '0');
 	putchar(k + '0');
