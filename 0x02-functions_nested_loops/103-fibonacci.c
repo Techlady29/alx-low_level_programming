@@ -1,20 +1,20 @@
 #include <stdio.h>
 
 /**
- * main - write a program that finds and prints the sum of the even-valued terms
+ * main - a program that finds and prints the sum of the even-valued terms
  * followed by a new line
  * Return: 0
  */
 
 int main(void)
 {
-	int a = 0, b =1, next = 0;
+	int a = 0, b = 1, next = 0;
 
 	int sum = 0;
 
 	while (next < 4000000)
 	{
-	next a + b;
+	next = a + b;
 
 	a = b;
 
