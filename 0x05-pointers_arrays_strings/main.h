@@ -6,3 +6,4 @@ void swap_int(int *a, int *b);
 
 #endif
 int _strlen(char *s);
+void _puts(char *str);
