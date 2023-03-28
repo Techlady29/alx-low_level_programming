@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * puts2 - prints string
+ * puts2 - print strings
  * @str: function parameter
- * Return: void
+ * Return: 0
  */
 
 void puts2(char *str)
@@ -12,8 +12,8 @@ void puts2(char *str)
 
 	for (i = 0; str[i] != '\0'; i++)
 	{
-	_putchar(str[i]);
-	i++;
+		_putchar(str[i]);
+		i++;
 	}
 	_putchar('\n');
 }
