@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * leet - encode string into 1337
- * @n: function parameter
- * return: n value
+ * leet - encodes a string into 1337
+ * @n: input
+ * return: the n value
  */
 
 char *leet(char *n)
