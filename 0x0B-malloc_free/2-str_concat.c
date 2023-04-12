@@ -20,9 +20,11 @@ char *str_concat(char *s1, char *s2)
 		s2 = "";
 	for (g = 0; s1[g] != '\0'; g++)
 		;
+
 	for (h = 0; s2[h] != '\0'; h++)
 		;
-	strout = malloc(sizeof(char) * (h + h + 1));
+
+	strout = malloc(sizeof(char) * (g + h + 1));
 
 	if (strout == NULL)
 	{
