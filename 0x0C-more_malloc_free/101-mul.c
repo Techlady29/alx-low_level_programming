@@ -11,23 +11,23 @@
 
 void _is_zero(char *argv[])
 {
-	int a, isn1 = 1, isn2 = 1;
+	int a, asn1 = 1, asn2 = 1;
 
 	for (a = 0; argv[1][a]; a++)
 		if (argv[1][a] != '0')
 		{
-			isn1 = 0;
+			asn1 = 0;
 			break;
 		}
 
 	for (a = 0; argv[2][a]; a++)
 		if (argv[2][a] != '0')
 		{
-			isn2 = 0;
+			asn2 = 0;
 			break;
 		}
 
-	if (isn1 == 1 || isn2 == 1)
+	if (asn1 == 1 || asn2 == 1)
 	{
 		printf("0\n");
 		exit(0);
