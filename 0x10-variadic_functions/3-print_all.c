@@ -9,43 +9,43 @@
 void print_all(const char * const format, ...)
 {
 	va_list valist;
-	unsigned int a = 0, q, f = 0;
+	unsigned int i = 0, q, c = 0;
 	char *str;
-	const char t_arg[] = "fabs";
+	const char t_arg[] = "cifs";
 
 	va_start(valist, format);
-	while (format && format[a])
+	while (format && format[i])
 	{
 		q = 0;
 		while (t_arg[q])
 		{
-			if (format[a] == t_arg[q] && f)
+			if (format[i] == t_arg[q] && c)
 			{
 				printf(", ");
 				break;
 			} q++;
 		}
-		switch (format[a])
+		switch (format[i])
 		{
+		case 'c':
+			printf("%c", va_arg(valist, int)), c = 1;
+			break;
+		case 'i':
+			printf("%d", va_arg(valist, int)), c = 1;
+			break;
 		case 'f':
-			printf("%c", va_arg(valist, int)), f = 1;
-			break;
-		case 'a':
-			printf("%d", va_arg(valist, int)), f = 1;
-			break;
-		case 'b':
-			printf("%f", va_arg(valist, double)), f = 1;
+			printf("%f", va_arg(valist, double)), c = 1;
 			break;
 		case 's':
-			str = va_arg(valist, char *), f = 1;
+			str = va_arg(valist, char *), c = 1;
 			if (!str)
 			{
-				printf("(nil)");
+				printf("(nill)");
 				break;
 			}
 			printf("%s", str);
 			break;
-		} a++;
+		} i++;
 	}
 	printf("\n"), va_end(valist);
 }
