@@ -11,7 +11,7 @@ void print_all(const char * const format, ...)
 	va_list valist;
 	unsigned int a = 0, q, f = 0;
 	char *str;
-	const char t_arg[] = "cibs";
+	const char t_arg[] = "fabs";
 
 	va_start(valist, format);
 	while (format && format[a])
