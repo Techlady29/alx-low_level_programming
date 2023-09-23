@@ -9,8 +9,8 @@
  * @value: the value of the new element
  * Return: 1 on success, 0 on failure
  */
-int
-hash_table_set(hash_table_t *ht, const char *key, const char *value)
+
+int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
 	unsigned long int index = 0;
 	hash_node_t *new_hash_node = NULL;
