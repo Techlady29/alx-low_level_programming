@@ -6,10 +6,10 @@ RM = rm -f
 CFLAGS = -wall -werror -wextra -pedantic
 
 all : $(OBJ)
-	$(CC) $(OBJ) -O $(NAME)
+	$(CC) $(OBJ) -o $(NAME)
 
 clean :
-	$(RM)*~ $(NAME)
+	$(RM) *~ $(NAME)
 
 oclean :
 	$(RM) $(OBJ)
